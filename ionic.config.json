@@ -1,0 +1,7 @@
+{
+  "name": "ndireto",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

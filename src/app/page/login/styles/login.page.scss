@@ -1,0 +1,126 @@
+// Custom variables
+// Note:  These ones were added by us and have nothing to do with Ionic CSS Custom Properties
+:host {
+  --page-margin: var(--app-broad-margin);
+  --page-background: var(--app-background-shade);
+}
+
+.card-login {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 6px;
+    padding-bottom: 20px;
+    transform: translate3d(0, 0, 0);
+
+}
+
+.card {
+  display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 6px;
+    color: rgba(0,0,0, 0.87);
+    background: #fff;
+}
+
+.card-header {
+  margin-top: -40px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  margin: -50px 15px 0;
+    border-radius: 3px;
+    padding: 15px;
+    position: relative;
+    z-index: 3;
+    background-color: black !important;
+    display: block;
+}
+
+// Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
+.login-content {
+  --background: transparent;
+    background-image: url('../../../../assets/img/login.jpg');
+  --padding-start: var(--page-margin);
+  --padding-end: var(--page-margin);
+  --padding-top: calc(var(--page-margin) * 5);
+  --padding-bottom: calc(var(--page-margin) * 5);
+
+  .auth-title {
+    color: var(--ion-color-dark);
+    font-weight: bold;
+    margin-top: calc(var(--page-margin) / 2);
+    margin-bottom: calc(var(--page-margin) * (3/2));
+    letter-spacing: 0.6px;
+  }
+
+  .inputs-list {
+    --ion-item-background: var(--page-background);
+
+    .input-item {
+      ion-icon {
+        margin-right: 10px;
+        padding: 0px;
+        padding-right: 0px;
+      }
+
+      --padding-start: 10px;
+      --padding-end: 0px;
+      --inner-padding-end: 0px;
+    }
+
+    .error-container {
+      .error-message {
+        margin: calc(var(--page-margin) / 2) 0px;
+        display: flex;
+        align-items: center;
+        color: var(--ion-color-danger);
+        font-size: 10px;
+
+        ion-icon {
+          padding-inline-end: calc(var(--page-margin) / 2);
+        }
+      }
+    }
+  }
+
+    .login-btn {
+      --color: var(--ion-color-medium);
+      margin: calc(var(--page-margin) / 2) 0px;
+      align-items: center;
+    }
+  
+
+  .other-auth-options-row {
+    justify-content: space-between;
+    align-items: center;
+
+    .forgot-btn {
+      --color: var(--ion-color-medium);
+
+      margin: 0px;
+    }
+
+    .signup-btn {
+      --color: var(--ion-color-secondary);
+
+      margin: 0px;
+    }
+  }
+
+  .social-auth-options {
+    .options-divider {
+      color: var(--ion-color-medium);
+  		margin: var(--page-margin) 0px;
+  		text-align: center;
+    }
+
+    .social-auth-btn {
+      margin: 0px;
+
+      &:not(:first-child) {
+        margin-top: var(--page-margin);
+      }
+    }
+  }
+}
